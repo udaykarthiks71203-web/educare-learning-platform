@@ -1,0 +1,340 @@
+/* =====================================
+   LESSON PAGE
+===================================== */
+
+.lesson-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding-bottom: 60px;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.lesson-header {
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #6366f1
+  );
+
+  color: white;
+  padding: 35px 7%;
+}
+
+.lesson-back-button {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.lesson-back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.lesson-header-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.lesson-number {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.lesson-header h1 {
+  font-size: 38px;
+  margin: 5px 0 12px;
+}
+
+.lesson-description {
+  max-width: 800px;
+  font-size: 17px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.lesson-meta {
+  display: flex;
+  gap: 20px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.lesson-container {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.lesson-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.lesson-content {
+  padding: 40px;
+}
+
+.lesson-content > h2 {
+  font-size: 27px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.formatted-content {
+  color: #374151;
+}
+
+
+/* =====================================
+   PARAGRAPHS
+===================================== */
+
+.lesson-paragraph {
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0 0 18px;
+}
+
+
+/* =====================================
+   SECTION TITLES
+===================================== */
+
+.lesson-section-title,
+.lesson-example-title {
+  font-size: 21px;
+  margin-top: 32px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.important-title {
+  color: #16a34a;
+}
+
+.mistake-title {
+  color: #dc2626;
+}
+
+.practice-title {
+  color: #7c3aed;
+}
+
+.output-title {
+  color: #2563eb;
+}
+
+.lesson-example-title {
+  color: #4f46e5;
+}
+
+
+/* =====================================
+   BULLET POINTS
+===================================== */
+
+.lesson-bullet {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 8px 0;
+  padding-left: 8px;
+}
+
+.lesson-bullet span {
+  color: #4f46e5;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.lesson-bullet p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =====================================
+   CODE
+===================================== */
+
+.lesson-code,
+.lesson-inline-code {
+  background: #111827;
+  color: #e5e7eb;
+  border-radius: 10px;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.lesson-code {
+  padding: 20px;
+  margin: 15px 0 25px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.lesson-inline-code {
+  padding: 12px 16px;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =====================================
+   OUTPUT BOX
+===================================== */
+
+.lesson-output {
+  background: #f3f4f6;
+  border-left: 4px solid #2563eb;
+  padding: 13px 16px;
+  margin: 10px 0;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #1f2937;
+  border-radius: 5px;
+}
+
+
+/* =====================================
+   COMPLETION
+===================================== */
+
+.lesson-completion {
+  border-top: 1px solid #e5e7eb;
+  padding: 25px 40px;
+  background: #fafafa;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.complete-button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.complete-button:hover {
+  background: #4338ca;
+}
+
+.complete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.completed-message {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+
+/* =====================================
+   LOADING / ERROR
+===================================== */
+
+.lesson-loading,
+.lesson-error {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lesson-error h2 {
+  margin-bottom: 15px;
+}
+
+.lesson-error button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+  .lesson-header {
+    padding: 25px 20px;
+  }
+
+  .lesson-header h1 {
+    font-size: 29px;
+  }
+
+  .lesson-description {
+    font-size: 15px;
+  }
+
+  .lesson-container {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .lesson-content {
+    padding: 25px 20px;
+  }
+
+  .lesson-content > h2 {
+    font-size: 23px;
+  }
+
+  .lesson-paragraph {
+    font-size: 15px;
+  }
+
+  .lesson-completion {
+    padding: 20px;
+  }
+
+  .complete-button,
+  .completed-message {
+    width: 100%;
+    text-align: center;
+  }
+}
